@@ -3,7 +3,7 @@
  - Daniel Espinosa 5600778
  - Samuel Velandia 5600777
 
-   ## Introducción :
+## Introducción :
 
 
    El monitoreo de variables cardiovasculares y hemodinámicas es fundamental en la atención clínica, ya que permite evaluar continuamente el estado fisiológico de los pacientes y detectar oportunamente posibles alteraciones que puedan comprometer su salud. Para ello, se emplean monitores de signos vitales capaces de medir parámetros como la frecuencia cardíaca y la saturación periférica de oxígeno (SpO₂). Con el fin de verificar el correcto funcionamiento de estos equipos, se utilizan simuladores biomédicos que generan señales fisiológicas controladas y reproducibles.
