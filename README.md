@@ -54,6 +54,67 @@ Posteriormente se configuraron los límites de alarma para la saturación de ox�
 
 Finalmente, se simularon condiciones de baja perfusión y taquicardia para evaluar nuevamente la capacidad de respuesta del sistema de monitoreo. Todos los resultados obtenidos fueron analizados y comparados con los valores de referencia suministrados por el simulador, permitiendo determinar la precisión y confiabilidad del monitor de signos vitales.
 
+
+# Resultados y analísis :
+
+## Simulación de Bradicardia : 
+
+<img width="637" height="472" alt="image" src="https://github.com/user-attachments/assets/1f07fff2-b0ea-4750-a0f4-7d8760c3eeb0" />
+
+En la imagen se observa el monitor de signos vitales configurado para una simulación de bradicardia, donde la frecuencia cardíaca registrada es de 40 lpm, valor que se encuentra por debajo del rango normal para un adulto (60–100 lpm). Debido a esta condición, el sistema activa la alarma de bradicardia extrema, ya que el límite inferior configurado para la frecuencia cardíaca es de 35 lpm, indicando que el paciente se encuentra cerca de un umbral crítico. Además, se evidencia que las alarmas de frecuencia cardíaca y taquicardia están habilitadas, permitiendo la detección automática de alteraciones del ritmo cardíaco.
+
+Por otro lado, la saturación periférica de oxígeno (SpO₂) se mantiene en 96 %, un valor considerado normal, lo que indica que, aunque existe una disminución importante de la frecuencia cardíaca, la oxigenación simulada del paciente sigue siendo adecuada. Esto demuestra que el monitor es capaz de identificar de manera independiente las variaciones de cada parámetro fisiológico y generar alertas específicas según la condición simulada. En general, la prueba confirma el correcto funcionamiento del sistema de alarmas y la capacidad del monitor para detectar eventos de bradicardia y advertir oportunamente al personal clínico.
+
+## Simulación de Baja perfusión : 
+
+<img width="636" height="466" alt="image" src="https://github.com/user-attachments/assets/49989838-b64f-41b6-9c2d-2bd4d16b54ae" />
+
+En la imagen se observa una simulación de baja perfusión, condición en la que el flujo sanguíneo hacia los tejidos periféricos disminuye significativamente. El monitor registra una frecuencia cardíaca de 80 lpm, valor que se encuentra dentro del rango fisiológico normal, mientras que la SpO₂ muestra un valor de 100 %. A pesar de que la saturación es adecuada, el monitor genera una alarma de SpO₂ alta (>97 %) debido a la configuración de los límites de alarma establecida durante la práctica.
+
+La señal fotopletismográfica (Pleth) continúa siendo visible, aunque en una condición real de baja perfusión esta señal suele presentar menor amplitud y puede verse más susceptible al ruido y a las interferencias. Esto ocurre porque la pulsioximetría depende de los cambios de volumen sanguíneo en los tejidos para calcular la saturación de oxígeno; cuando el flujo sanguíneo disminuye, la calidad de la señal puede deteriorarse y afectar la precisión de la medición.
+
+Esta prueba permite evidenciar una de las limitaciones de los sistemas de pulsioximetría, ya que en situaciones de perfusión deficiente el monitor puede presentar lecturas inestables o incluso generar falsas alarmas debido a la baja calidad de la señal recibida. Sin embargo, el hecho de que el equipo continúe detectando la frecuencia cardíaca y la saturación demuestra que el sistema mantiene la capacidad de monitoreo bajo condiciones de señal reducida.
+
+En conclusión, la simulación de baja perfusión permitió evaluar el comportamiento del monitor ante una condición clínica que puede afectar la calidad de la señal fotopletismográfica. Los resultados muestran la importancia de interpretar las lecturas de SpO₂ junto con el contexto clínico del paciente y la calidad de la señal mostrada por el equipo para evitar diagnósticos erróneos o falsas alarmas.
+
+## Simulación de Hipoxia : 
+
+<img width="655" height="490" alt="image" src="https://github.com/user-attachments/assets/9c8dc9d8-2477-4a0b-b15b-6f5c2155c641" />
+
+En la imagen se observa una simulación de hipoxia, condición en la cual existe una disminución de la cantidad de oxígeno disponible en la sangre. El monitor registra una frecuencia cardíaca de 80 lpm, valor que se encuentra dentro del rango normal para un adulto, mientras que la saturación periférica de oxígeno (SpO₂) es de 85 %, un valor considerablemente inferior al rango normal (95–100 %). Debido a esta disminución, el monitor activa la alarma de SpO₂ baja, ya que el límite inferior de alarma fue configurado en 90 %, indicando una posible situación de riesgo para el paciente.
+
+Además, se puede observar una señal fotopletismográfica (Pleth) estable y bien definida, lo que indica que el sensor está detectando correctamente la señal pulsátil simulada. La presencia de esta señal confirma que la alarma generada está asociada a una disminución real del valor de saturación configurado en el simulador y no a una pérdida de señal o mala conexión del sensor. En un entorno clínico, una SpO₂ del 85 % podría indicar problemas respiratorios o una oxigenación insuficiente de los tejidos, por lo que requeriría una intervención inmediata.
+
+En general, esta prueba demuestra que el monitor uMEC 100 responde adecuadamente ante condiciones de hipoxia simulada, detectando la disminución de la saturación de oxígeno y activando las alarmas visuales y sonoras correspondientes. Esto evidencia la importancia de los sistemas de monitoreo continuo para la detección temprana de eventos que puedan comprometer la seguridad del paciente.
+
+## Simulación de Taquicardia : 
+
+<img width="885" height="652" alt="image" src="https://github.com/user-attachments/assets/3c8a0b32-ce44-43af-badf-601cd873eb08" />
+
+En la imagen se observa una simulación de taquicardia, donde el monitor registra una frecuencia cardíaca de 140 lpm, valor que supera el rango normal para un adulto en reposo (60–100 lpm). Debido a esta condición, el sistema activa la alarma de frecuencia cardíaca alta (FC > 120 lpm), indicando que el valor medido excede el límite superior configurado en el monitor. Esta respuesta demuestra que el equipo es capaz de detectar oportunamente alteraciones en el ritmo cardíaco y alertar al personal clínico ante una posible situación de riesgo.
+
+Por otra parte, la saturación periférica de oxígeno (SpO₂) presenta un valor de 98 %, el cual se encuentra dentro del rango fisiológico normal. Esto indica que, aunque la frecuencia cardíaca está aumentada, la oxigenación simulada del paciente continúa siendo adecuada. Asimismo, la señal fotopletismográfica muestra una mayor frecuencia de pulsos, evidenciando el incremento en la velocidad de los latidos cardíacos generado por el simulador.
+
+Desde el punto de vista clínico, la taquicardia puede estar asociada a diferentes condiciones como ejercicio físico, estrés, fiebre, hipovolemia, alteraciones cardíacas o respuestas compensatorias del organismo. Por esta razón, la detección temprana de este evento es importante para prevenir complicaciones y permitir una intervención oportuna.
+
+En conclusión, la prueba permitió verificar que el monitor uMEC 100 identifica correctamente una condición de taquicardia simulada, mostrando el aumento de la frecuencia cardíaca y activando las alarmas correspondientes. Esto confirma la utilidad de los sistemas de monitoreo continuo para la vigilancia de pacientes y la detección rápida de alteraciones cardiovasculares.
+
+## Analísis General :
+
+Durante la práctica se evaluó el desempeño del monitor de signos vitales uMEC 100 mediante la simulación de diferentes condiciones fisiológicas y patológicas utilizando el simulador Pronk OxSim OX-1. Las pruebas realizadas incluyeron escenarios de bradicardia, hipoxia, baja perfusión y taquicardia, permitiendo verificar la capacidad del monitor para medir correctamente la frecuencia cardíaca y la saturación periférica de oxígeno, así como la efectividad de sus sistemas de alarma.
+
+En la simulación de bradicardia, el monitor detectó una frecuencia cardíaca de 40 lpm y generó las alertas correspondientes, demostrando una adecuada capacidad para identificar frecuencias cardíacas anormalmente bajas. De igual manera, en la condición de taquicardia, el equipo registró una frecuencia de 140 lpm y activó la alarma de frecuencia cardíaca elevada, evidenciando una respuesta rápida ante alteraciones significativas del ritmo cardíaco.
+
+Por otra parte, durante la simulación de hipoxia, la saturación de oxígeno disminuyó hasta un valor de 85 %, provocando la activación de la alarma de SpO₂ baja. Este comportamiento confirmó que el monitor es capaz de detectar niveles críticos de oxigenación y advertir oportunamente sobre posibles situaciones de riesgo para el paciente. Asimismo, en la prueba de baja perfusión se observó cómo la calidad de la señal fotopletismográfica puede verse afectada cuando disminuye el flujo sanguíneo periférico, lo que demuestra la importancia de interpretar las mediciones considerando tanto los valores mostrados como la calidad de la señal adquirida.
+
+En general, los resultados obtenidos muestran que el monitor uMEC 100 presentó un funcionamiento adecuado durante todas las pruebas realizadas, registrando correctamente los valores simulados y activando las alarmas configuradas cuando las variables excedieron los límites establecidos. Esto permitió comprobar la confiabilidad del equipo para el monitoreo continuo de pacientes y resaltar la importancia de las verificaciones periódicas mediante simuladores biomédicos para garantizar la seguridad y precisión de los sistemas de monitoreo clínico.
+
+# Conclusiones : 
+
+Durante el desarrollo de la práctica se logró evaluar el funcionamiento del monitor de signos vitales uMEC 100 mediante la simulación de diferentes condiciones cardiovasculares y hemodinámicas utilizando el simulador Pronk OxSim OX-1. Los resultados obtenidos demostraron que el equipo es capaz de medir adecuadamente la frecuencia cardíaca y la saturación periférica de oxígeno, además de activar correctamente las alarmas cuando los parámetros simulados superan los límites establecidos. Esto permitió comprender la importancia de los sistemas de monitoreo continuo en la detección temprana de alteraciones fisiológicas que puedan comprometer la seguridad del paciente.
+
+Asimismo, la práctica permitió evidenciar algunas limitaciones asociadas a la medición de parámetros fisiológicos, especialmente en condiciones de baja perfusión, donde la calidad de la señal puede afectar la precisión de las lecturas y generar posibles falsas alarmas. En general, se concluye que el uso de simuladores biomédicos constituye una herramienta fundamental para verificar el desempeño de los monitores de signos vitales, ya que permite realizar pruebas funcionales de manera segura y controlada, contribuyendo al aseguramiento de la calidad y confiabilidad de los equipos utilizados en el entorno clínico.
+
 # Preguntas a desarrollar : 
 
 - Pregunta 1. ¿Cuál es el principio de operación del Pronk OxSim OX-1 para simular una onda pulsátil?
